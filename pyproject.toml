@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hiroyukigpu-screenshot-cleaner"
+version = "1.0.0"
+description = "スクリーンショットを検出して日付別に整理します。"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "HiroyukiGPU"}]
+dependencies = []
+
+[project.scripts]
+screenshot-cleaner = "screenshot_cleaner.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["screenshot_cleaner*"]
